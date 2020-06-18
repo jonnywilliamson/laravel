@@ -3,6 +3,7 @@
 namespace Telegram\Bot\Laravel\Console;
 
 use Illuminate\Console\Command;
+use Illuminate\Contracts\Container\BindingResolutionException;
 use Symfony\Component\Console\Input\InputArgument;
 use Telegram\Bot\Bot;
 use Telegram\Bot\BotManager;
@@ -21,6 +22,7 @@ class ConsoleBaseCommand extends Command
 
     /**
      * @throws TelegramSDKException
+     * @throws BindingResolutionException
      */
     public function bot(): Bot
     {

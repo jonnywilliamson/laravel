@@ -82,11 +82,11 @@ class TelegramServiceProvider extends ServiceProvider
         );
         $this->app->alias(BotManager::class, 'telegram');
 
-        $this->app->bind(Bot::class, fn ($app) => $app[BotManager::class]->bot());
-        $this->app->alias(Bot::class, 'telegram.bot');
-
-        $this->app->bind(Api::class, fn ($app) => $app[Bot::class]->getApi());
-        $this->app->alias(Api::class, 'telegram.api');
+//        $this->app->bind(Bot::class, fn ($app) => $app[BotManager::class]->bot());
+//        $this->app->alias(Bot::class, 'telegram.bot');
+//
+//        $this->app->bind(Api::class, fn ($app) => $app[Bot::class]->getApi());
+//        $this->app->alias(Api::class, 'telegram.api');
     }
 
     /**
