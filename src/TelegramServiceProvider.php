@@ -19,7 +19,7 @@ use Telegram\Bot\Laravel\Console\Webhook\WebhookSetupCommand;
 /**
  * Class TelegramServiceProvider.
  */
-class TelegramServiceProvider extends ServiceProvider implements DeferrableProvider
+class TelegramServiceProvider extends ServiceProvider
 {
     /**
      * Register the service provider.
@@ -110,13 +110,5 @@ class TelegramServiceProvider extends ServiceProvider implements DeferrableProvi
             WebhookRemoveCommand::class,
             WebhookSetupCommand::class,
         ]);
-    }
-
-    /**
-     * Get the services provided by the provider.
-     */
-    public function provides(): array
-    {
-        return [BotManager::class, Bot::class, Api::class, 'telegram', 'telegram.bot', 'telegram.api'];
     }
 }
