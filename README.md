@@ -28,6 +28,17 @@ Head over to [Awesome Telegram Bots][link-awesome-telegram-bots] to share, disco
 
 Thank you for considering contributing to the project. Please read [the contributing guide][link-contributing] before creating an issue or sending in a pull request.
 
+## Local Development
+
+This package uses [orchestral/workbench](https://github.com/orchestral/workbench) for local testing.
+
+To set up the workbench environment:
+
+```bash
+composer install
+php artisan workbench:install
+```
+
 ## Code of Conduct
 
 Please read our [Code of Conduct][link-code-of-conduct] before contributing or engaging in discussions.
