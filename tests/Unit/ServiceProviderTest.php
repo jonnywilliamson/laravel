@@ -23,4 +23,3 @@ test('it binds api to the container', function () {
 test('the telegram facade resolves to bot manager', function () {
     expect(Telegram::getFacadeRoot())->toBeInstanceOf(BotManager::class);
 });
-

@@ -2,7 +2,6 @@
 
 namespace Telegram\Bot\Laravel;
 
-use Illuminate\Contracts\Support\DeferrableProvider;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\ServiceProvider;
 use Telegram\Bot\Api;

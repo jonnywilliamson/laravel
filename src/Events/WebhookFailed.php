@@ -15,7 +15,5 @@ class WebhookFailed
     /**
      * Create a new event instance.
      */
-    public function __construct(public string $botname, public ResponseObject $update, public Throwable $exception)
-    {
-    }
+    public function __construct(public string $botname, public ResponseObject $update, public Throwable $exception) {}
 }

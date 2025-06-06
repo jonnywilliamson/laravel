@@ -9,7 +9,6 @@ beforeEach(function () {
     $this->app->register(TelegramServiceProvider::class);
 });
 
-
 test('it loads the default bot configuration', function () {
     $config = $this->app['config']->get('telegram.bots.default');
     expect($config)->toBeArray();

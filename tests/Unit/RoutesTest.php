@@ -23,7 +23,7 @@ it('registers telegram webhook route with middleware', function () {
 it('webhook controller listen handles update', function () {
     $botName = 'default';
     $manager = $this->app->make(BotManager::class);
-    $controller = new WebhookController();
+    $controller = new WebhookController;
 
     // Simulate lifecycle termination callback invocation
     $invoked = false;
@@ -73,7 +73,7 @@ it('telegram facade fake returns predefined response', function () {
 
     $response = Telegram::sendMessage([
         'chat_id' => 123456789,
-        'text'    => 'Hello Pest Test',
+        'text' => 'Hello Pest Test',
     ]);
 
     expect($response->id)->toBe(1);
