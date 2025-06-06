@@ -4,7 +4,7 @@ namespace Telegram\Bot\Laravel\Facades;
 
 use Illuminate\Support\Facades\Facade;
 use Telegram\Bot\BotManager;
-use Telegram\Bot\Testing\BotFake;
+use Telegram\Bot\Testing\Fakes\BotFake;
 
 /**
  * @see \Telegram\Bot\BotManager
